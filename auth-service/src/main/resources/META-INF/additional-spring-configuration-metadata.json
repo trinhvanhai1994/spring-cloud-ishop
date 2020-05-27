@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "service.port",
+      "type": "java.lang.Integer",
+      "description": "Description for service.port."
+  }
+] }
