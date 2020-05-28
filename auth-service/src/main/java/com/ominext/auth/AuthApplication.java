@@ -8,16 +8,16 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class AuthApplication implements WebMvcConfigurer {
+public class AuthApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AuthApplication.class, args);
 	}
 
-	@Override
-	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		if(!registry.hasMappingForPattern("/static/**")) {
-			registry.addResourceHandler("/static/**")
-					.addResourceLocations("classpath:/static/", "classpath:/static/js/");
-		}
-	}
+//	@Override
+//	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+//		if(!registry.hasMappingForPattern("/static/**")) {
+//			registry.addResourceHandler("/static/**")
+//					.addResourceLocations("classpath:/static/", "classpath:/static/js/");
+//		}
+//	}
 }

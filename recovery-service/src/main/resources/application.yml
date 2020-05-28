@@ -4,6 +4,7 @@ server:
 eureka:
   client:
     registerWithEureka: false
-    fetchRegistry: false
+    fetchRegistry: true
+#    enabled: false
   server:
     waitTimeInMsWhenSyncEmpty: 0
